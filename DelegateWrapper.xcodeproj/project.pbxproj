@@ -13,6 +13,11 @@
 		C625C81A1EEFC8EB00565ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C625C8191EEFC8EB00565ABA /* Assets.xcassets */; };
 		C625C81D1EEFC8EB00565ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C625C81B1EEFC8EB00565ABA /* LaunchScreen.storyboard */; };
 		C625C8201EEFC8EB00565ABA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C625C81F1EEFC8EB00565ABA /* main.m */; };
+		C625C8291EEFCA4B00565ABA /* HBProtocolWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C625C8281EEFCA4B00565ABA /* HBProtocolWrapper.m */; };
+		C625C82D1EEFCFD500565ABA /* HBOriginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C625C82C1EEFCFD500565ABA /* HBOriginViewController.m */; };
+		C625C8301EEFCFEC00565ABA /* HBWrapperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C625C82F1EEFCFEC00565ABA /* HBWrapperViewController.m */; };
+		C625C8341EEFD21D00565ABA /* HBOriginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C625C8331EEFD21D00565ABA /* HBOriginModel.m */; };
+		C625C8371EEFD22B00565ABA /* HBWrapperModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C625C8361EEFD22B00565ABA /* HBWrapperModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		C625C81C1EEFC8EB00565ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C625C81E1EEFC8EB00565ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C625C81F1EEFC8EB00565ABA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C625C8261EEFCA1300565ABA /* HBDemoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBDemoProtocol.h; sourceTree = "<group>"; };
+		C625C8271EEFCA4B00565ABA /* HBProtocolWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBProtocolWrapper.h; sourceTree = "<group>"; };
+		C625C8281EEFCA4B00565ABA /* HBProtocolWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBProtocolWrapper.m; sourceTree = "<group>"; };
+		C625C82B1EEFCFD500565ABA /* HBOriginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBOriginViewController.h; sourceTree = "<group>"; };
+		C625C82C1EEFCFD500565ABA /* HBOriginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBOriginViewController.m; sourceTree = "<group>"; };
+		C625C82E1EEFCFEC00565ABA /* HBWrapperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBWrapperViewController.h; sourceTree = "<group>"; };
+		C625C82F1EEFCFEC00565ABA /* HBWrapperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBWrapperViewController.m; sourceTree = "<group>"; };
+		C625C8321EEFD21D00565ABA /* HBOriginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBOriginModel.h; sourceTree = "<group>"; };
+		C625C8331EEFD21D00565ABA /* HBOriginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBOriginModel.m; sourceTree = "<group>"; };
+		C625C8351EEFD22B00565ABA /* HBWrapperModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBWrapperModel.h; sourceTree = "<group>"; };
+		C625C8361EEFD22B00565ABA /* HBWrapperModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBWrapperModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +76,8 @@
 			children = (
 				C625C8101EEFC8EB00565ABA /* AppDelegate.h */,
 				C625C8111EEFC8EB00565ABA /* AppDelegate.m */,
-				C625C8131EEFC8EB00565ABA /* ViewController.h */,
-				C625C8141EEFC8EB00565ABA /* ViewController.m */,
+				C625C8311EEFD18900565ABA /* ViewController */,
+				C625C82A1EEFCFAE00565ABA /* HBModel */,
 				C625C8161EEFC8EB00565ABA /* Main.storyboard */,
 				C625C8191EEFC8EB00565ABA /* Assets.xcassets */,
 				C625C81B1EEFC8EB00565ABA /* LaunchScreen.storyboard */,
@@ -69,6 +85,33 @@
 				C625C81F1EEFC8EB00565ABA /* main.m */,
 			);
 			path = DelegateWrapper;
+			sourceTree = "<group>";
+		};
+		C625C82A1EEFCFAE00565ABA /* HBModel */ = {
+			isa = PBXGroup;
+			children = (
+				C625C8261EEFCA1300565ABA /* HBDemoProtocol.h */,
+				C625C8271EEFCA4B00565ABA /* HBProtocolWrapper.h */,
+				C625C8281EEFCA4B00565ABA /* HBProtocolWrapper.m */,
+				C625C8321EEFD21D00565ABA /* HBOriginModel.h */,
+				C625C8331EEFD21D00565ABA /* HBOriginModel.m */,
+				C625C8351EEFD22B00565ABA /* HBWrapperModel.h */,
+				C625C8361EEFD22B00565ABA /* HBWrapperModel.m */,
+			);
+			name = HBModel;
+			sourceTree = "<group>";
+		};
+		C625C8311EEFD18900565ABA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C625C8131EEFC8EB00565ABA /* ViewController.h */,
+				C625C8141EEFC8EB00565ABA /* ViewController.m */,
+				C625C82B1EEFCFD500565ABA /* HBOriginViewController.h */,
+				C625C82C1EEFCFD500565ABA /* HBOriginViewController.m */,
+				C625C82E1EEFCFEC00565ABA /* HBWrapperViewController.h */,
+				C625C82F1EEFCFEC00565ABA /* HBWrapperViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +140,7 @@
 		C625C8051EEFC8EB00565ABA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HB;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = honeyeeb;
 				TargetAttributes = {
@@ -141,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C625C82D1EEFCFD500565ABA /* HBOriginViewController.m in Sources */,
 				C625C8151EEFC8EB00565ABA /* ViewController.m in Sources */,
+				C625C8341EEFD21D00565ABA /* HBOriginModel.m in Sources */,
+				C625C8301EEFCFEC00565ABA /* HBWrapperViewController.m in Sources */,
 				C625C8201EEFC8EB00565ABA /* main.m in Sources */,
 				C625C8121EEFC8EB00565ABA /* AppDelegate.m in Sources */,
+				C625C8291EEFCA4B00565ABA /* HBProtocolWrapper.m in Sources */,
+				C625C8371EEFD22B00565ABA /* HBWrapperModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MC5VANDM7B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DelegateWrapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honeyeeb.DelegateWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,8 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MC5VANDM7B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DelegateWrapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honeyeeb.DelegateWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
